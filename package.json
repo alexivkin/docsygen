@@ -1,0 +1,21 @@
+{
+  "name": "Docsygen",
+  "version": "1.0.0",
+  "description": "Hugo+docsy documentation generator",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexivkin/docsygen"
+  },
+  "author": "",
+  "license": "ISC"
+}
