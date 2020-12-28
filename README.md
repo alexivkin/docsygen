@@ -3,6 +3,8 @@
 Allows you to build your static documentation sites using the [docsy theme](https://www.docsy.dev/).
 Contains hugo-extended, docsy theme and the docsy prerequisites (`node postcss postcss-cli autoprefixer`)
 
+The default image is alpine based, but you can use `Dockerfile.buster` to base it off Debian buster. Built with the ordinary `docker build .`
+
 ### Serving the site locally
 
 Use the `--bind` hugo argument to have it bind to all interfaces instead of only the localhost that it does by default. This way the container port can be properly exported to the host.
