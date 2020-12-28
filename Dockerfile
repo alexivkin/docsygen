@@ -7,7 +7,8 @@ ENV HUGO_URL="https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION
 ENV DEBIAN_FRONTEND=noninteractive
 
 COPY package.json /app/
-# Grab libc because hugo extended is build off it
+
+# Grab libc because hugo extended is build with glibc
 RUN apk add --update --no-cache libc6-compat libstdc++ curl git \
  && rm -rf /var/cache/apk/* \
  && cd /app/ \
