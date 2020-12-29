@@ -3,7 +3,9 @@
 Allows you to build your static documentation sites using the [docsy theme](https://www.docsy.dev/).
 Contains hugo-extended, docsy theme and the docsy prerequisites (`node postcss postcss-cli autoprefixer`)
 
+Runs as the `node` user with `1000:1000` so you can safely map out generated contents as non-root.
 The default image is alpine based, but you can use `Dockerfile.buster` to base it off Debian buster. Built with the ordinary `docker build .`
+Alpine image is about 270Mb size, of which 165Mb is hugo+docksy+deps
 
 ### Serving the site locally
 
