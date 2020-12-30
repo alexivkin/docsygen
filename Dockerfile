@@ -19,6 +19,9 @@ RUN apk add --update --no-cache libc6-compat libstdc++ curl git \
  && git submodule update --init --recursive --depth 1 \
  && chown -R node:node /app
 
+# Docsy bugfix for handling non-standard contentdirs in edit links
+COPY layouts/ /app/themes/docsy/layouts/
+
 USER node
 EXPOSE 1313
 WORKDIR /app/
